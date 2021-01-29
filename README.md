@@ -100,6 +100,7 @@ Gyroscope values could be retrieved by the following few lines of code.
 <h7><i>Objective
     -C</i></h7>
 </div><br>
+
 ```objective-c
 
     [motionKit getGyroValues:1.0 values:^(double x, double y, double z) {
@@ -108,7 +109,9 @@ Gyroscope values could be retrieved by the following few lines of code.
     
 ```
 
+
 ## Getting Magnetometer Values
+
 Getting Magnetometer values is as easy as grabbing a cookie.
 
 <div align="right">
@@ -130,6 +133,7 @@ Getting Magnetometer values is as easy as grabbing a cookie.
 </div><br>
 
 ``` objective-c
+
     [motionKit getMagnetometerValues:1.0 values:^(double x, double y, double z) {
         // your values here
     }];
@@ -234,14 +238,16 @@ You can get the refined and processed userAccelaration through the Device Motion
 <div align="right">
 <h7><i>Objective-C</i></h7>
 </div><br>
+
 ```objective-c
 
     [motionKit getAccelerationFromDeviceMotion:1.0 values:^(double x, double y, double z) {
         // your values here
     }];
+    
 ```
 
-###Getting Gravitational Acceleration
+### Getting Gravitational Acceleration
 Again, you can access it through the Device Motion service as well.
 
 <div align="right">
@@ -301,6 +307,7 @@ Interesting, Get it in a magical way.
 <div align="right">
 <h7><i>Swift</i></h7>
 </div>
+
 ```swift
       motionKit.getAttitudeFromDeviceMotion(interval: 1.0) {
         (attitude) -> () in
@@ -316,6 +323,7 @@ Interesting, Get it in a magical way.
 <div align="right">
 <h7><i>Objective-C</i></h7>
 </div>
+
 ```objective-c
     [motionKit getAttitudeFromDeviceMotionWithInterval:1.0 values:^(CMAttitude *attitude) {
         // Your values here
