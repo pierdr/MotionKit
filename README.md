@@ -43,7 +43,8 @@ First, initialise the MotionKit instance. Its a Must.
 ```
 <div align="right">
 <h7><i>Objective-C</i></h7>
-</div>
+</div><br>
+
 ```objective-c
 
     MotionKit *motionKit = [[NSClassFromString(@"MotionKit") alloc] init];
